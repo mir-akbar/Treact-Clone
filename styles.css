@@ -97,13 +97,14 @@ a{
 
 .btn__menu{
     background-color: transparent;
-    font-size:40px;
     text-align: center;
     border:none;
     display:none;
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
-.bPlZcF {
+.menu-open-ham {
     height: 1.5rem;
     width: 1.5rem;
 }
@@ -229,6 +230,10 @@ h1{
     line-height: 1.25;
 }
 
+.header_title{
+    color:rgb(26,32,44);
+}
+
 p{
     text-align:left;
     margin:32px 0;
@@ -252,6 +257,7 @@ input{
     padding-left: 2rem;
     font-weight: 500;
     font-size:100%;
+    border-style:solid;
     border-color:#a0aec0;
 }
 
@@ -662,6 +668,7 @@ Values
 .space{
     margin-right:2rem;
 }
+
 .advantage_heading{
     display: flex;
     align-items: center;
@@ -1225,6 +1232,99 @@ Footer
     transform:translateX(53rem) translateY(-2rem);
     color: rgb(80 17 204);
     opacity: 0.5;
+}
+
+/* SMALL PHONES , TABLETS , LARGE SMARTPHONES */
+
+@media(max-width:768px){
+    .header_container{
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .left_column{
+        width:auto;
+        margin-left:auto;
+        margin-right:auto;
+        max-width:32rem;
+        text-align: center;
+    }
+
+    .right_column{
+        width:auto;
+    }
+
+    .header_para{
+        width:100%;
+        text-align:center;
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
+        font-size: 1rem;
+        letter-spacing: normal;
+    }
+
+    .header_title{
+        text-align:center;
+        font-size:1.875rem;
+    }
+
+    .btn{
+        transform:translateY(-116.8%) translateX(192%);
+    }
+
+    .customer_strip{
+        max-width:100%;
+        text-align: center;
+        margin-top:3rem;
+        margin-right:0;
+    }
+
+    .customer_strip-dimension{
+        max-width:32rem;
+        height:auto;
+        opacity: 0.5;
+    }
+    .para{
+        max-width:100%;
+        text-align:center;
+        font-size: 0.875rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+
+    .main_illustration{
+        margin-top:3rem;
+    }
+
+    .main_img{
+        width:100%;
+        max-width:32rem;
+    }
+
+    .blob{
+        pointer-events: none;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        z-index: -10;
+        height: 16rem;
+        width: 16rem;
+        transform:translateX(-55%) translateY(70%);
+        opacity: 0.05;
+    }
+
+    /* Features*/
+    header{
+        height:auto;
+    }
+
+    .main_features-container{
+        padding:97px 32px;
+    }
+
 }
 
 
