@@ -1870,7 +1870,47 @@ Footer
     
 }
 
+@media(max-width:408px){
+    /* Feature */
+    .cube{
+        right: -280px;
+    }
 
+    .pink_blob{
+        z-index:-10;
+    }
+
+    .row{
+        z-index: 1;
+    }
+
+    .row_center{
+        z-index:1;
+    }
+
+    .features_container{
+        z-index:1;
+    }
+
+    .main_features-container{
+        z-index: 1;
+    }
+
+    /* Steps */
+    .cube1 {
+        transform: translateX(156%) translateY(-53%);
+    }
+
+    /* Get Started*/
+
+    .gs_blob2 {
+        transform: translateX(6rem) translateY(-60rem);
+    }
+
+    .fblob-2 {
+        transform: translateX(10.5rem) translateY(-23rem);
+    }
+}
 @media(max-width: 1024px){
     .nav_links{
         display:none;
