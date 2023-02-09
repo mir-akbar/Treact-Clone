@@ -258,7 +258,16 @@ input{
     font-weight: 500;
     font-size:100%;
     border-style:solid;
-    border-color:#a0aec0;
+    border-color:rgb(226,232,240);
+}
+
+input:hover{
+    border-color:rgb(160 174 192 );
+}
+
+input:focus-wi{
+    border-style:solid;
+    border-color:rgb(100 21 255);
 }
 
 input[placeholder]{
@@ -931,7 +940,7 @@ Pricing
     background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
 }
 
-.hIgZEU {
+.purple_cube{
     pointer-events: none;
     position:relative;
     left: -8rem;
@@ -1289,6 +1298,7 @@ Footer
     }
 
     .customer_strip-dimension{
+        width:100%;
         max-width:32rem;
         height:auto;
         opacity: 0.5;
@@ -1521,6 +1531,343 @@ Footer
     }
 
 
+}
+
+/* SMALL  PHONES , LARGE SMARTPHONES*/
+@media(max-width:576px){
+    /* Header */
+
+    .input_box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    input{
+        padding:1rem 2rem;
+    }
+
+    .btn{
+        position:relative;
+        transform:translateY(0%) translateX(0%);
+        max-width:440px;
+        display: flex;
+        justify-content: center;
+        margin-top:1rem;
+    }
+
+    .blob{
+        transform: translateX(-55%) translateY(135%);
+    }
+
+    /* Feature */
+
+    .feature_heading-fix{
+        font-size:2.25rem;
+    }
+
+    .feature_text-container{
+        font-size:0.875rem;
+    }
+
+    .features_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width:24rem;
+    }
+
+    .feature_expl-container{
+        text-align: center;
+        margin:0;
+        margin-top:1rem;
+        width:100%;
+        max-width:24rem;
+    }
+
+    .feature_description{
+        text-align: center;
+        margin-top:0.25rem;
+        width:100%;
+        max-width:24rem;
+    }
+
+    .pink_blob{
+        transform:translateY(830%);
+    }
+
+    /* Hero */
+
+    .hero_row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .left{
+        width:100%;
+        max-width: 28rem;
+        text-align: center;
+    }
+
+    .right{
+        width:100%;
+        max-width:28rem;
+        margin:0;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .hero_img{
+        margin:0;
+    }
+
+    .cube{
+        right: -407px;
+    }
+
+    .hero_title{
+        text-align:center
+    }
+
+    .hero_title1{
+        font-size:1.875rem;
+        text-align:center;
+    }
+
+    .hero_para{
+        font-size:0.875rem;
+        text-align:center;
+    }
+
+    /* Steps */
+
+    .steps_container{
+        padding-top:96px;
+    }
+
+    .steps_row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .steps_left{
+        width:100%;
+        max-width:28rem;
+        margin:0;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .steps_right{
+        width:100%;
+        max-width:28rem;
+        margin:0;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .cube1{
+        transform: translateX(230%) translateY(-53%);
+    }
+
+    .step_list{
+        align-items: center;
+    }
+
+    .step{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step_text{
+        margin:0;
+        margin-top:0.75rem;
+        text-align: center;
+    }
+
+    .step_description{
+        text-align:center;
+    }
+
+    /* Values */
+
+    .values_row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .values_left{
+        width:100%;
+        max-width: 28rem;
+        margin:0;
+        margin-top:4rem;
+        margin-left:auto;
+        margin-right:auto;
+        text-align: center;
+    }
+
+    .values_right{
+        width:100%;
+        max-width:28rem;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .value_para{
+        text-align: center;
+        font-size: 0.875rem;
+    }
+
+    .advantages{
+        width:100%;
+        max-width: 20rem;
+        margin:0;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+
+    .space{
+        margin:0;
+    }
+
+    .advantage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .advantage_description{
+        text-align:center;
+    }
+
+    /* Pricing */
+    
+    .pricing_sub-heading{
+        font-size:2.25rem;
+        line-height: 1.625;
+    }
+
+    .pricing_desc{
+        font-size:0.875rem;
+    }
+
+    /* Get Started */
+
+    .gso{
+        height:343px;
+    }
+
+    .main_detail-container{
+        padding-top:5rem;
+        padding-bottom:5rem;
+        padding-left: 0;
+        padding-right:0;
+    }
+
+    .get_started-left{
+        margin:0;
+        padding-left:2rem;
+        padding-right:2rem;
+    }
+
+    .get_started-right{
+        padding-left:2rem;
+        padding-right:2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .get_started-text{
+        font-size:1.5rem;
+    }
+
+    .get_started-primary-btn{
+        margin:0;
+        padding: 0.75rem 1.5rem;
+        font-size: 0.875rem;
+        font-weight: 700;
+        letter-spacing: 0.025em;
+    }
+
+    .get_started-secondary-btn{
+        margin-top:1rem;
+        padding: 0.75rem 1.5rem;
+        font-size: 0.875rem;
+        font-weight: 700;
+        letter-spacing: 0.025em;
+    }
+
+    .gs_blob2{
+        transform: translateX(16rem) translateY(-58rem);
+    }
+    
+    /* Footer */
+
+    .footer_container{
+        max-height:823px;
+        padding-top:4rem;
+        padding-bottom:2.5rem;
+    }
+
+    .links{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .link_column{
+        margin-top:1rem;
+        padding-left:1rem;
+        padding-right:1rem;
+        text-align:center;
+    }
+
+    .link_column:last-child{
+        margin-top:3rem;
+    }
+
+    .link_list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top:1.4rem;
+    }
+
+    .footer_bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .fblob-1 {
+        transform: translateX(-7rem) translateY(-49.5rem);
+    }
+
+    .fblob-2 {
+        transform: translateX(21rem) translateY(-23rem);
+    }
+
+    .copyright{
+        margin-top:2rem;
+        font-size:0.875rem;
+    }
+
+    .social_list{
+        margin-top:2rem;
+    }
+
+
+    
 }
 
 
