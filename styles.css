@@ -314,11 +314,14 @@ input[placeholder]{
     margin-right: 0.5rem;
     cursor: pointer;
     line-height: 1;
+    transition-duration: 300ms;
 }
 
 .btn:hover{
     background-color: rgb(80, 17, 204);
+    transition-duration: all 300ms;
 }
+
 
 
 .para{
@@ -561,14 +564,12 @@ Hero
     border:none;
     border-radius:9999px;
     cursor:pointer;
+    transition-duration: 300ms;
 }
 
 .hero_btn:hover{
     background-color: rgb(80, 17, 204);
-}
-
-.values_btn:hover{
-    background-color: rgb(80, 17, 204);
+    transition-duration: 300ms;
 }
 
 .hero_img{
@@ -768,6 +769,12 @@ Values
     padding:0.75rem 2rem;
     border:none;
     cursor:pointer;
+    transition-duration: 300ms;
+}
+
+.values_btn:hover{
+    background-color: rgb(80, 17, 204);
+    transition-duration: 300ms;
 }
 
 
@@ -1048,6 +1055,7 @@ Get Started
     border-radius:9999px;
     border:none;
     width:auto;
+    transition-duration: 300ms;
 }
 
 .get_started-primary-btn:hover{
@@ -1066,6 +1074,7 @@ Get Started
     background-color:rgb(100,21,255);
     color:rgb(247,250,252);
     border:1px solid rgb(160 174 192 );
+    transition-duration: 300ms;
 }
 
 .get_started-secondary-btn:hover{
@@ -1378,10 +1387,27 @@ Footer
         font-size:1rem;
     }
 
+    @media(min-width:1280px){
+        .header_title{
+            font-size:3rem;
+        }
+
+        .header_para{
+            font-size:1.125rem;
+        }
+    }
+
     .main_img{
         width: 100%;
         max-width: 32rem;
     }
+    @media(min-width:1280px){
+        .main_img{
+            width:100%;
+            max-width: 48rem;
+        }
+    }
+
 
     .blob{
         transform: translateX(-56.67%);
